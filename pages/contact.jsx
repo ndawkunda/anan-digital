@@ -52,7 +52,7 @@ const contact = () => {
               <textarea name='info' id='info' rows={8}></textarea>
             </div>
             <div className={ contactStyles.btnContainer }>
-              <input type="submit"  className={ contactStyles.btn } />
+              <input type="submit" value="Envoyer" className={ contactStyles.btn } />
             </div>
           </form>
         </div>
