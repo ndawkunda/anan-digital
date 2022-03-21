@@ -1,5 +1,8 @@
+.container {
+  @apply md:p-10
+}
 .mainSection {
-  @apply lg:flex lg:flex-row-reverse m-10 bg-primary
+  @apply lg:flex lg:flex-row-reverse bg-primary
 }
 .textContainer {
   @apply text-white text-sm md:text-base p-6
@@ -8,7 +11,7 @@
   @apply text-2xl md:text-3xl font-bold mb-4
 }
 .textContainer p {
-  @apply my-6 text-justify
+  @apply my-6
 }
 .textContainer li {
   @apply list-disc p-2 ml-8

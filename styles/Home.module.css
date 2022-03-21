@@ -87,10 +87,10 @@
   @apply flex flex-col md:grid grid-cols-9 mx-auto py-14 text-slate-100
 }
 .how .card .title {
-  @apply flex items-center gap-2 font-semibold text-lg mb-4 text-primary
+  @apply flex items-center gap-2 font-semibold text-lg mb-4 text-primary leading-none
 }
 .how .card .text {
-  @apply leading-tight text-justify
+  @apply leading-tight
 }
 .how .rowLeft {
   @apply flex flex-row-reverse md:contents
