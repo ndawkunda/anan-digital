@@ -17,16 +17,16 @@ const contact = () => {
         <div className={ contactStyles.formContainer }>
           <form action='#' method='POST'>
             <div className={ contactStyles.inputContainer }>
-              <label htmlFor='name'>Votre nom</label>
-              <input type='text' name='name'  id='name' placeholder='Prénom Nom' />
+              <label htmlFor='name'>Votre nom *</label>
+              <input type='text' name='name'  id='name' placeholder='Prénom Nom' required />
             </div>
             <div className={ contactStyles.inputContainer }>
-              <label htmlFor='email'>Votre email</label>
-              <input type='text' name='email'  id='email'  autoComplete="email" placeholder='pseudo@email.com' />
+              <label htmlFor='email'>Votre email *</label>
+              <input type='text' name='email'  id='email'  autoComplete="email" placeholder='pseudo@email.com' required />
             </div>
             <div className={ contactStyles.inputContainer }>
-              <label htmlFor='phone'>Votre numéro de téléphone</label>
-              <input type='tel' name='phone' id='phone' placeholder='77 123 45 67' />
+              <label htmlFor='phone'>Votre numéro de téléphone *</label>
+              <input type='text' name='phone' id='phone' placeholder='77 123 45 67' required />
             </div>
             <div className={ contactStyles.checksContainer }>
               <p>Vous avez un projet de </p>
