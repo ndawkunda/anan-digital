@@ -8,7 +8,7 @@ const contact = () => {
         <div className={ contactStyles.textContainer }>
           <h1 className={ contactStyles.title }>Vous avez un projet ?</h1>
           <p>
-            Merci de renseigner le formulaire pour permettre à votre consultant de mieux cerner vos besoins. Vos échanges n’en seront que plus efficaces !
+            Merci de renseigner le formulaire pour permettre à votre consultant de mieux cerner vos besoins. Vos échanges n&apos;en seront que plus efficaces !
           </p>
           <p>
             Nous allons vous contactez dans les plus brefs délais afin de fixer un rendez-vous.
@@ -22,7 +22,7 @@ const contact = () => {
             </div>
             <div className={ contactStyles.inputContainer }>
               <label htmlFor='email'>Votre email</label>
-              <input type='text' name='email'  id='email'  autocomplete="email" placeholder='pseudo@email.com' />
+              <input type='text' name='email'  id='email'  autoComplete="email" placeholder='pseudo@email.com' />
             </div>
             <div className={ contactStyles.inputContainer }>
               <label htmlFor='phone'>Votre numéro de téléphone</label>

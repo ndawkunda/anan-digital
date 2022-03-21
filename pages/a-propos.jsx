@@ -9,10 +9,10 @@ const Apropos = () => {
           <div className={ aproposStyles.textContainer }>
             <h1 className={ aproposStyles.title }>À PROPOS</h1>
             <p>
-              Nous sommes une agence WEB ! Nous créons des sites internet, faisons du référencement et de la création graphique. Plus qu’une agence de prestataires, nous intervenons auprès de nos clients dans le quotidien de leur activité avec la conviction d’apporter un changement apportant de meilleurs résultats et plus de confort chaque jour.
+              Nous sommes une agence WEB ! Nous créons des sites internet, faisons du référencement et de la création graphique. Plus qu&apos;une agence de prestataires, nous intervenons auprès de nos clients dans le quotidien de leur activité avec la conviction d&apos;apporter un changement apportant de meilleurs résultats et plus de confort chaque jour.
             </p>
             <p>
-              Nous plaçons la satisfaction de nos clients au-dessus de tout. C’est à travers cette reconnaissance, que nous puisons l’énergie qui nous pousse sans cesse à relever de nouveaux défis.
+              Nous plaçons la satisfaction de nos clients au-dessus de tout. C&apos;est à travers cette reconnaissance, que nous puisons l&apos;énergie qui nous pousse sans cesse à relever de nouveaux défis.
             </p>
             <p>
               Vous souhaitez redéfinir votre stratégie web ? Passer votre site en Responsive Design ? Créer un nouveau site internet ? Confiez-nous votre projet web et bénéficiez de nos conseils pour votre communication digitale.
@@ -30,7 +30,7 @@ const Apropos = () => {
               </ul>
             </p>
             <p>
-              Fournir un service constant et qualitatif pour chaque projet, gagner la satisfaction et fidéliser nos clients, c’est l'état d'esprit dans lequel nous travaillons et ce dont nous sommes les plus fiers.
+              Fournir un service constant et qualitatif pour chaque projet, gagner la satisfaction et fidéliser nos clients, c&apos;est l&apos;état d&apos;esprit dans lequel nous travaillons et ce dont nous sommes les plus fiers.
             </p>
           </div>
         </section>
