@@ -1,0 +1,37 @@
+.navContainer {
+  @apply w-full text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-800
+}
+.nav {
+  @apply flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8
+}
+.logoContainer {
+  @apply flex flex-row items-center justify-between p-4
+}
+.logo {
+  font-family: 'Gugi', Arial, sans-serif;
+  @apply text-secondary text-2xl rounded-lg dark:text-white focus:outline-none focus:drop-shadow-xl cursor-pointer
+}
+.logo span {
+  @apply text-primary
+}
+.logoContainer button {
+  @apply rounded-lg md:hidden focus:outline-none focus:drop-shadow
+}
+.mobileMenu {
+  @apply block md:hidden
+}
+.mobileMenu .navLinks {
+  @apply flex-col flex-grow pb-4
+}
+.defaultMenu {
+  @apply hidden md:block
+}
+.defaultMenu .navLinks {
+  @apply pb-0 flex justify-end flex-row
+}
+.navLinks li {
+  @apply px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-tertiary focus:bg-tertiary focus:outline-none focus:drop-shadow transition-all duration-300
+}
+.navLinks .active {
+  @apply text-gray-900 bg-tertiary
+}

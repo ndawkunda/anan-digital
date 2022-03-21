@@ -1,116 +1,133 @@
-.container {
-  padding: 0 2rem;
+.hero {
+  @apply bg-secondary text-white flex flex-col items-center md:flex-row-reverse md:justify-around
+}
+.hero .imgContainer {
+  @apply flex justify-center md:w-1/2
+}
+.hero .textContainer {
+  @apply flex flex-col p-16 pt-0 md:pl-24 md:pt-16 md:pr-0 md:w-1/2
+}
+.hero .textContainer h1 {
+  @apply font-bold text-xl mb-5
+}
+.hero .textContainer p {
+  @apply mb-5
+}
+.hero .textContainer button {
+  @apply bg-accent_1 hover:bg-white focus:bg-white text-white hover:text-accent_1 focus:text-accent_1 place-self-start
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.why,
+.banner,
+.clients,
+.how {
+  @apply flex flex-col px-10 md:px-24 py-8 md:py-16
+}
+.why .cardsContainer {
+  @apply flex flex-wrap my-8
+}
+.why .cardContainer {
+  @apply xl:w-1/3 md:w-1/2 p-4 w-full
+}
+.why .card {
+  @apply flex flex-col bg-slate-300 bg-opacity-30 p-8 h-56
+}
+.why .card .icon {
+  @apply w-14 h-14 inline-flex items-center justify-center rounded-full bg-accent_2 mb-6 text-slate-700 text-2xl
+}
+.why .card .text {
+  @apply font-medium text-slate-800 text-sm
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.banner {
+  @apply bg-accent_1 text-white py-16 flex flex-col items-center md:flex-row md:justify-around
+}
+.banner .textContainer {
+  @apply flex flex-col md:w-1/2 md:pl-12
+}
+.banner .textContainer .text {
+  @apply text-center leading-relaxed my-5 md:text-justify
+}
+.banner .imgContainer {
+  @apply flex justify-center items-center md:w-1/2 md:pr-12
+}
+.banner .textContainer button {
+  @apply bg-secondary hover:bg-white focus:bg-white text-white hover:text-secondary focus:text-secondary place-self-center md:place-self-end
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.clients {
+  @apply items-center bg-primary
+}
+.clients h1 {
+  @apply text-white
+}
+.clients .cardsContainer {
+  @apply flex flex-wrap my-8 text-white
+}
+.clients .cardContainer {
+  @apply lg:w-1/3 p-5 lg:p-3 w-full
+}
+.clients .cardContainer .card {
+  @apply bg-white bg-opacity-20 h-full hover:scale-105 border-b-4 border-white transition-all duration-700
+}
+.clients .cardContainer .textContainer {
+  @apply p-4
+}
+.clients .cardContainer .title {
+  @apply inline-block font-bold text-xl lg:text-lg hover:text-accent_2 mb-2
+}
+.clients .cardContainer .desc {
+  @apply font-light lg:text-sm
+}
+.clients button {
+  @apply text-accent_2 hover:text-white hover:bg-accent_2 border-2 border-accent_2
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.how .rowsContainer {
+  @apply flex flex-col md:grid grid-cols-9 mx-auto py-14 text-slate-100
 }
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.how .card .title {
+  @apply flex items-center gap-2 font-semibold text-lg mb-4 text-primary
 }
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+.how .card .text {
+  @apply leading-tight text-justify
 }
-
-.title,
-.description {
-  text-align: center;
+.how .rowLeft {
+  @apply flex flex-row-reverse md:contents
 }
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.how .rowLeft .card {
+  @apply bg-secondary col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto
 }
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.how .rowLeft .join {
+  @apply col-start-5 col-end-6 md:mx-auto relative mr-10
 }
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+.how .rowLeft .join .lineContainer {
+  @apply h-full w-6 flex items-center justify-center
 }
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.how .rowLeft .join .line {
+  @apply h-full w-1 bg-primary pointer-events-none
 }
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.how .rowLeft .join .circle {
+  @apply w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-secondary
 }
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.how .rowRight {
+  @apply flex md:contents
 }
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.how .rowRight .card {
+  @apply bg-secondary col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto
 }
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.how .rowRight .join {
+  @apply col-start-5 col-end-6 mr-10 md:mx-auto relative
 }
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.how .rowRight .join .lineContainer {
+  @apply h-full w-6 flex items-center justify-center
+}
+.how .rowRight .join .line {
+  @apply h-full w-1 bg-primary pointer-events-none
+}
+.how .rowRight .join .circle {
+  @apply w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-secondary
+}
+.how button {
+  @apply w-fit text-accent_1 hover:text-white hover:bg-accent_1 border-2 border-accent_1 place-self-center
 }

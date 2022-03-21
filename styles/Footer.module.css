@@ -1,0 +1,15 @@
+.footerContainer {
+  @apply flex flex-col gap-x-8 bg-slate-800 text-white p-8
+}
+.footerContainer h1 {
+  @apply m-auto font-bold text-base mb-2
+}
+.footerContainer p {
+  @apply m-auto font-thin text-sm
+}
+.footerLinks {
+  @apply flex flex-col gap-x-8 justify-center items-center gap-2 text-sm mt-5 md:flex-row
+}
+.footerLinks li {
+  @apply hover:text-secondary
+}
