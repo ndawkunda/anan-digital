@@ -10,10 +10,6 @@ const Layout = ({ children, title }) => {
     <>
       <Head>
         <title>{ title }</title>
-        <meta name="description" content="ANAN Digital est une agence de création de site web." />
-        <meta name="keywords" content="agence web, création de site internet, SEO, refonte site web, marketing Digital" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
       </Head>
 
       <div className={layoutStyles.wrapper}>

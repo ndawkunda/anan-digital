@@ -32,3 +32,31 @@
 .formContainer .btn {
   @apply bg-secondary px-6 py-3 font-bold text-white rounded cursor-pointer hover:text-gray-900 focus:text-gray-900 hover:bg-tertiary focus:bg-tertiary focus:outline-none focus:drop-shadow transition-all duration-300
 }
+
+.modalError .header,
+.modalSuccess .header {
+  @apply flex justify-end
+}
+.modalError,
+.modalSuccess {
+  @apply bg-green-500 text-white p-4 mt-8
+}
+.modalError .messageContainer,
+.modalSuccess .messageContainer {
+  @apply px-2 md:px-10 py-4
+}
+.modalError {
+  @apply bg-red-500
+}
+.modalSuccess {
+  @apply bg-green-500
+}
+.modalError h1,
+.modalSuccess h1 {
+  @apply font-bold text-lg mb-2
+}
+.modalError p,
+.modalSuccess p {
+  @apply p-2
+}
+
