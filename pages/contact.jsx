@@ -4,7 +4,7 @@ import { Animated } from "react-animated-css";
 import Layout from '../components/Layout';
 import contactStyles from '../styles/Contact.module.css';
 
-const contact = () => {
+const Contact = () => {
   const [fullname, setFullname] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
