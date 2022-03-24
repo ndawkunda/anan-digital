@@ -102,110 +102,111 @@ const Contact = () => {
   return (
     <Layout title="ANAN Digital - Contact">
       <div className={ contactStyles.container }>
-        {/* TEXT */}
-        <div className={ contactStyles.textContainer }>
-          <h1 className={ contactStyles.title }>Vous avez un projet ?</h1>
-          <p>
-            Merci de renseigner le formulaire pour permettre à votre consultant de mieux cerner vos besoins. Vos échanges n&apos;en seront que plus efficaces !
-          </p>
-          <p>
-            Nous allons vous contactez dans les plus brefs délais afin de fixer un rendez-vous.
-          </p>
-        </div>
+        <div className={ contactStyles.mainContent }>
+          {/* TEXT */}
+          <div className={ contactStyles.textContainer }>
+            <h1 className={ contactStyles.title }>Vous avez un projet ?</h1>
+            <p>
+              Merci de renseigner le formulaire pour permettre à votre consultant de mieux cerner vos besoins. Vos échanges n&apos;en seront que plus efficaces !
+            </p>
+            <p>
+              Nous allons vous contactez dans les plus brefs délais afin de fixer un rendez-vous.
+            </p>
+          </div>
 
-        {/* FORM */}
-        <div className={ contactStyles.formContainer }>
-          <form>
-            <div className={ contactStyles.inputContainer }>
-              <label htmlFor='fullname'>Votre nom *</label>
-              <input 
-                type='text' name='fullname'  id='fullname'
-                placeholder='Prénom Nom'
-                value={ fullname }
-                onChange={(e) => {
-                  setFullname(e.target.value);
-                }}
-                required />
-            </div>
-            <div className={ contactStyles.inputContainer }>
-              <label htmlFor='email'>Votre email *</label>
-              <input
-                type='text' name='email'  id='email' 
-                autoComplete="email"
-                placeholder='pseudo@email.com'
-                value={ email }
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
-                required />
-            </div>
-            <div className={ contactStyles.inputContainer }>
-              <label htmlFor='phone'>Votre numéro de téléphone *</label>
-              <input
-                type='text' name='phone' id='phone'
-                placeholder='77 123 45 67'
-                value={ phone }
-                onChange={(e) => {
-                  setPhone(e.target.value);
-                }}
-                required />
-            </div>
-            <div className={ contactStyles.checksContainer }>
-              <p>Vous avez un projet de </p>
-              <div className={ contactStyles.checkContainer }>
-                <input
-                  type='checkbox' name='site' id='site'
-                  value='Site internet'
-                  checked={ projects.site }
-                  onChange={ () => handleCheck('site') } />
-                <label htmlFor='site'>Site internet</label>
+          {/* FORM */}
+          <div className={ contactStyles.formContainer }>
+            <form>
+              <div className={ contactStyles.inputContainer }>
+                <label htmlFor='fullname'>Votre nom *</label>
+                <input 
+                  type='text' name='fullname'  id='fullname'
+                  placeholder='Prénom Nom'
+                  value={ fullname }
+                  onChange={(e) => {
+                    setFullname(e.target.value);
+                  }}
+                  required />
               </div>
-              <div className={ contactStyles.checkContainer }>
+              <div className={ contactStyles.inputContainer }>
+                <label htmlFor='email'>Votre email *</label>
                 <input
-                  type='checkbox' name='graphic' id='graphic'
-                  value='Création graphique'
-                  checked={ projects.graphic }
-                  onChange={ () => handleCheck('graphic') } />
-                <label htmlFor='graphic'>Création graphique</label>
+                  type='text' name='email'  id='email' 
+                  autoComplete="email"
+                  placeholder='pseudo@email.com'
+                  value={ email }
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                  required />
               </div>
-              <div className={ contactStyles.checkContainer }>
+              <div className={ contactStyles.inputContainer }>
+                <label htmlFor='phone'>Votre numéro de téléphone *</label>
                 <input
-                  type='checkbox' name='logo' id='logo'
-                  value='Logo'
-                  checked={ projects.logo }
-                  onChange={ () => handleCheck('logo') } />
-                <label htmlFor='logo'>Logo</label>
+                  type='text' name='phone' id='phone'
+                  placeholder='77 123 45 67'
+                  value={ phone }
+                  onChange={(e) => {
+                    setPhone(e.target.value);
+                  }}
+                  required />
               </div>
-              <div className={ contactStyles.checkContainer }>
+              <div className={ contactStyles.checksContainer }>
+                <p>Vous avez un projet de </p>
+                <div className={ contactStyles.checkContainer }>
+                  <input
+                    type='checkbox' name='site' id='site'
+                    value='Site internet'
+                    checked={ projects.site }
+                    onChange={ () => handleCheck('site') } />
+                  <label htmlFor='site'>Site internet</label>
+                </div>
+                <div className={ contactStyles.checkContainer }>
+                  <input
+                    type='checkbox' name='graphic' id='graphic'
+                    value='Création graphique'
+                    checked={ projects.graphic }
+                    onChange={ () => handleCheck('graphic') } />
+                  <label htmlFor='graphic'>Création graphique</label>
+                </div>
+                <div className={ contactStyles.checkContainer }>
+                  <input
+                    type='checkbox' name='logo' id='logo'
+                    value='Logo'
+                    checked={ projects.logo }
+                    onChange={ () => handleCheck('logo') } />
+                  <label htmlFor='logo'>Logo</label>
+                </div>
+                <div className={ contactStyles.checkContainer }>
+                  <input
+                    type='checkbox' name='other' id='other'
+                    value='Autre'
+                    checked={ projects.other }
+                    onChange={ () => handleCheck('other') } />
+                  <label htmlFor='other'>Autre</label>
+                </div>
+              </div>
+              <div className={ contactStyles.inputContainer }>
+                <label htmlFor='info'>Vous souhaitez préciser votre demande ?</label>
+                <textarea 
+                  name='info' id='info' rows={8}
+                  value={ info }
+                  placeholder='Décrivez nous un peu ce que vous voulez'
+                  onChange={(e) => {
+                    setInfo(e.target.value);
+                  }}
+                ></textarea>
+              </div>
+              <div className={ contactStyles.btnContainer }>
                 <input
-                  type='checkbox' name='other' id='other'
-                  value='Autre'
-                  checked={ projects.other }
-                  onChange={ () => handleCheck('other') } />
-                <label htmlFor='other'>Autre</label>
+                  type="submit" value="Envoyer"
+                  className={ contactStyles.btn }
+                  onClick={ (e) => handleSubmit(e) }
+                />
               </div>
-            </div>
-            <div className={ contactStyles.inputContainer }>
-              <label htmlFor='info'>Vous souhaitez préciser votre demande ?</label>
-              <textarea 
-                name='info' id='info' rows={8}
-                value={ info }
-                placeholder='Décrivez nous un peu ce que vous voulez'
-                onChange={(e) => {
-                  setInfo(e.target.value);
-                }}
-              ></textarea>
-            </div>
-            <div className={ contactStyles.btnContainer }>
-              <input
-                type="submit" value="Envoyer"
-                className={ contactStyles.btn }
-                onClick={ (e) => handleSubmit(e) }
-              />
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
-        
         {/* MODALS */}
         {(showError || showSuccess) && 
           <div className={ contactStyles.modalContainer }>

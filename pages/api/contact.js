@@ -1,7 +1,9 @@
+import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
+
 export default function (req, res) {
-  require('dotenv').config();
-  const PASSWORD = process.env.password;
-  let nodemailer = require('nodemailer');
+  dotenv.config();
+  const PASSWORD = process.env.PASSWORD;
   const transporter = nodemailer.createTransport({
     port: 465,
     host: "smtp.gmail.com",
