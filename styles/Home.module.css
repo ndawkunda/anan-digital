@@ -54,7 +54,7 @@
 }
 .banner #bannerBtnDesktop,
 .banner #bannerBtnMobile {
-  @apply bg-primary hover:bg-slate-100 focus:bg-slate-100 text-slate-100 hover:text-primary focus:text-primary
+  @apply text-slate-100 hover:text-primary focus:text-primary bg-primary hover:bg-slate-100 focus:bg-slate-100 border-primary hover:border-slate-100 focus:border-slate-100 
 }
 .banner #bannerBtnDesktop {
   @apply hidden md:block place-self-start mt-8

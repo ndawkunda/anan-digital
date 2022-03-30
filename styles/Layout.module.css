@@ -1,5 +1,6 @@
 .wrapper {
   font-family: 'Poppins', Arial, sans-serif;
+  @apply text-slate-900
 }
 .btn {
   @apply inline-block px-6 py-2 mt-2 mr-2 xl:text-lg font-semibold transition-all duration-300 rounded-md border-2

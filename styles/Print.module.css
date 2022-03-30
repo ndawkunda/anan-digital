@@ -1,0 +1,39 @@
+#hero {
+  @apply bg-[url('../public/images/print.jpg')];
+}
+
+.why {
+  @apply flex flex-col px-10 md:px-24 py-8 md:py-16
+}
+.why .rowsContainer {
+  @apply flex flex-col items-center py-8
+}
+.why .rowLeft,
+.why .rowRight {
+  @apply w-full md:w-4/5 py-4
+}
+.why .rowLeft {
+  @apply md:place-self-start border-accent_1
+}
+.why .rowRight {
+  @apply md:place-self-end
+}
+.why .rowLeft .card {
+  @apply border-secondary
+}
+.why .rowRight .card {
+  @apply border-tertiary
+}
+.why .card {
+  @apply border-2 rounded-md p-8 
+}
+.why .card .title {
+  @apply font-semibold text-lg md:text-xl lg:text-2xl text-primary leading-snug mb-4;
+}
+.why .card .text {
+  @apply md:text-lg
+}
+.why button {
+  @apply w-fit place-self-center text-accent_1 hover:text-slate-100 focus:text-slate-100 hover:bg-accent_1 focus:bg-accent_1 border-accent_1;
+}
+

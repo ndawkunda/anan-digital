@@ -1,0 +1,90 @@
+#hero {
+  @apply bg-[url('../public/images/design.jpg')];
+}
+
+.importance,
+.how {
+  @apply flex flex-col px-10 md:px-24 py-8 md:py-16
+}
+
+.importance {
+  @apply items-center md:flex-row md:gap-8
+}
+.importance .left {
+  @apply md:w-1/2
+}
+.importance .right {
+  @apply md:w-1/2 text-center md:text-left md:text-lg mb-5
+}
+.importance .left h3 {
+  @apply text-center md:text-left leading-relaxed my-5 font-bold text-2xl opacity-50
+}
+.importance #importanceBtnDesktop,
+.importance #importanceBtnMobile {
+  @apply text-accent_1 hover:text-slate-100 focus:text-slate-100 border-accent_1 hover:bg-accent_1 focus:bg-accent_1
+}
+.importance #importanceBtnDesktop {
+  @apply hidden md:block place-self-start mt-8
+}
+.importance #importanceBtnMobile {
+  @apply md:hidden 
+}
+
+
+.how {
+  @apply bg-accent_1
+}
+.how #howTitle>h1 {
+  @apply text-slate-100
+}
+.how #howTitle>div {
+  @apply bg-slate-100
+}
+.how .rowsContainer {
+  @apply flex flex-col md:grid grid-cols-9 mx-auto py-14 text-slate-100;
+}
+.how .card .title {
+  @apply flex flex-col items-start gap-4 font-semibold text-lg text-primary leading-snug;
+}
+.how .card .title i {
+  @apply text-4xl
+}
+.how .rowLeft {
+  @apply flex flex-row-reverse md:contents;
+}
+.how .rowLeft .card {
+  @apply bg-slate-100 col-start-1 col-end-5 p-8 rounded-xl my-4 ml-auto;
+}
+.how .rowLeft .join {
+  @apply col-start-5 col-end-6 md:mx-auto relative mr-10;
+}
+.how .rowLeft .join .lineContainer {
+  @apply h-full w-6 flex items-center justify-center;
+}
+.how .rowLeft .join .line {
+  @apply h-full w-1 bg-primary pointer-events-none;
+}
+.how .rowLeft .join .circle {
+  @apply w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-primary;
+}
+.how .rowRight {
+  @apply flex md:contents;
+}
+.how .rowRight .card {
+  @apply bg-slate-100 col-start-6 col-end-10 p-8 rounded-xl my-4 mr-auto;
+}
+.how .rowRight .join {
+  @apply col-start-5 col-end-6 mr-10 md:mx-auto relative;
+}
+.how .rowRight .join .lineContainer {
+  @apply h-full w-6 flex items-center justify-center;
+}
+.how .rowRight .join .line {
+  @apply h-full w-1 bg-primary pointer-events-none;
+}
+.how .rowRight .join .circle {
+  @apply w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-primary;
+}
+.how button {
+  @apply w-fit place-self-center text-slate-100 hover:text-primary focus:text-primary bg-primary hover:bg-slate-100 focus:bg-slate-100 border-primary hover:border-slate-100 focus:border-slate-100;
+}

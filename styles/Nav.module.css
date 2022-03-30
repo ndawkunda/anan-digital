@@ -2,7 +2,7 @@
   @apply flex w-full h-16 items-center text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-800
 }
 .nav {
-  @apply flex flex-col w-full max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8
+  @apply flex flex-col w-full max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row md:px-6 lg:px-8
 }
 .logoContainer {
   @apply flex flex-row items-center justify-between p-4
@@ -15,22 +15,23 @@
   @apply text-primary
 }
 .logoContainer button {
-  @apply rounded-lg md:hidden focus:outline-none focus:drop-shadow
+  @apply rounded-lg lg:hidden focus:outline-none focus:drop-shadow
 }
 .mobileMenu {
-  @apply block md:hidden
+  height: calc(100vh - 4rem);
+  @apply block lg:hidden bg-slate-100 absolute top-16 left-0 w-full z-10
 }
 .mobileMenu .navLinks {
-  @apply flex-col flex-grow pb-4
+  @apply flex-col flex-grow p-4
 }
 .defaultMenu {
-  @apply hidden md:block
+  @apply hidden lg:block
 }
 .defaultMenu .navLinks {
   @apply pb-0 flex justify-end flex-row
 }
 .navLinks li {
-  @apply px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-tertiary focus:bg-tertiary focus:outline-none focus:drop-shadow transition-all duration-300
+  @apply px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 lg:mt-0 lg:ml-2 hover:text-gray-900 focus:text-gray-900 hover:bg-tertiary focus:bg-tertiary focus:outline-none focus:drop-shadow transition-all duration-300
 }
 .navLinks .active {
   @apply text-gray-900 bg-tertiary

@@ -7,25 +7,35 @@ import navStyles from '../styles/Nav.module.css';
 const Nav = () => {
   const navItems = [
     {
-      label: 'Accueil',
+      label: "Accueil",
       url: "/",
     },
     {
-      label: 'Site web',
+      label: "Site web",
       url: "/site",
     },
     {
-      label: 'À propos',
+      label: "Design",
+      url: "/design",
+    },
+    {
+      label: "Impression",
+      url: "/impression",
+    },
+    {
+      label: "Formations",
+      url: "/formations",
+    },
+    {
+      label: "À propos",
       url: "/a-propos",
     },
-   {
-      label: 'Contact',
+    {
+      label: "Contact",
       url: "/contact",
     },
   ];
-  const navGenerator = (items) => {
-    
-  }
+
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const handleOpenClick = () => setOpen(!open);
@@ -34,7 +44,7 @@ const Nav = () => {
     <div className={ navStyles.navContainer }>
       <nav id='navbar' className={ navStyles.nav }>
         <div className={ navStyles.logoContainer }>
-          <Link href='/'>
+          <Link href='/' passHref>
             <div className={ navStyles.logo }><span>ANAN</span> Digital</div> 
           </Link>
           <button onClick={ handleOpenClick }>

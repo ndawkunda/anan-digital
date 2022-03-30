@@ -24,7 +24,7 @@ const Site = () => {
           <div className={layoutStyles.overlay}>
             <div className={layoutStyles.imgContainer}></div>
             <div className={layoutStyles.textContainer}>
-              <h1>Confiez nous vos projets de site web </h1>
+              <h1>Confiez nous vos projets de site web !</h1>
               <p>
                 Lorsque l&apos;on parle d&apos;un site internet, qu&apos;il
                 s&apos;agisse d&apos;un Site Vitrine et d&apos;un Site
