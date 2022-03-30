@@ -1,0 +1,88 @@
+#hero {
+  @apply bg-[url('../public/images/site.jpg')];
+}
+
+.why,
+.how {
+  @apply flex flex-col px-10 md:px-24 py-8 md:py-16;
+}
+
+.why {
+  
+}
+.why .cardsContainer {
+  @apply grid gap-4 md:grid-cols-2 lg:grid-cols-3 my-8;
+}
+.why .cardContainer {
+  @apply bg-slate-200
+}
+.why .card {
+  @apply flex flex-col p-8;
+}
+.why .card .icon {
+  @apply w-14 h-14 inline-flex items-center justify-center rounded-full bg-accent_2 mb-6 text-slate-700 text-2xl;
+}
+.why .card .text {
+  @apply font-medium text-slate-800 text-sm md:text-base;
+}
+.why button {
+  @apply w-fit place-self-center text-primary hover:text-accent_2 focus:text-accent_2 bg-accent_2 hover:bg-primary focus:bg-primary border-accent_2 hover:border-primary focus:border-primary;
+}
+
+.how {
+  @apply bg-primary
+}
+.how #howTitle>h1 {
+  @apply text-slate-100
+}
+.how #howTitle>div {
+  @apply bg-slate-100
+}
+.how .rowsContainer {
+  @apply flex flex-col md:grid grid-cols-9 mx-auto py-14 text-slate-100;
+}
+.how .card .title {
+  @apply flex items-center gap-2 font-semibold text-lg mb-4 text-primary leading-none;
+}
+.how .card .text {
+  @apply leading-tight;
+}
+.how .rowLeft {
+  @apply flex flex-row-reverse md:contents;
+}
+.how .rowLeft .card {
+  @apply bg-accent_1 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto;
+}
+.how .rowLeft .join {
+  @apply col-start-5 col-end-6 md:mx-auto relative mr-10;
+}
+.how .rowLeft .join .lineContainer {
+  @apply h-full w-6 flex items-center justify-center;
+}
+.how .rowLeft .join .line {
+  @apply h-full w-1 bg-accent_2 pointer-events-none;
+}
+.how .rowLeft .join .circle {
+  @apply w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-accent_1;
+}
+.how .rowRight {
+  @apply flex md:contents;
+}
+.how .rowRight .card {
+  @apply bg-accent_1 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto;
+}
+.how .rowRight .join {
+  @apply col-start-5 col-end-6 mr-10 md:mx-auto relative;
+}
+.how .rowRight .join .lineContainer {
+  @apply h-full w-6 flex items-center justify-center;
+}
+.how .rowRight .join .line {
+  @apply h-full w-1 bg-accent_2 pointer-events-none;
+}
+.how .rowRight .join .circle {
+  @apply w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-accent_1;
+}
+.how button {
+  @apply w-fit place-self-center text-slate-100 hover:text-primary focus:text-primary hover:bg-slate-100 focus:bg-slate-100 border-slate-100;
+}

@@ -1,8 +1,8 @@
 .navContainer {
-  @apply w-full text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-800
+  @apply flex w-full h-16 items-center text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-800
 }
 .nav {
-  @apply flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8
+  @apply flex flex-col w-full max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8
 }
 .logoContainer {
   @apply flex flex-row items-center justify-between p-4

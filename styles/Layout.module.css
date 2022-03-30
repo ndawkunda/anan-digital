@@ -2,8 +2,37 @@
   font-family: 'Poppins', Arial, sans-serif;
 }
 .btn {
-  @apply inline-block px-6 py-2 mt-2 mr-2 xl:text-lg font-semibold transition-all duration-300
+  @apply inline-block px-6 py-2 mt-2 mr-2 xl:text-lg font-semibold transition-all duration-300 rounded-md border-2
+}
+.titleContainer {
+  @apply flex flex-col items-center
 }
 .sectionTitle {
-  @apply flex justify-center font-bold text-2xl text-slate-800 text-center
+  @apply flex justify-center font-bold text-2xl text-slate-800 text-center lg:text-4xl
+}
+.titleUnderline {
+  @apply h-2 w-20 bg-slate-800 my-4 rounded-md
+}
+
+.hero {
+  @apply bg-no-repeat bg-cover bg-center text-slate-100 flex flex-col items-center md:flex-row-reverse lg:justify-around
+}
+.hero .overlay {
+  @apply bg-slate-800 bg-opacity-90
+}
+.hero .imgContainer {
+  @apply flex justify-center lg:w-1/4
+}
+.hero .textContainer {
+  height: calc(100vh - 4rem);
+  @apply flex flex-col items-center justify-center lg:items-start text-center lg:text-left px-16 py-24 lg:py-32 lg:pl-24 lg:w-3/4
+}
+.hero .textContainer h1 {
+  @apply font-bold text-2xl lg:text-3xl mb-5
+}
+.hero .textContainer p {
+  @apply mb-5 text-lg lg:text-xl
+}
+.hero .textContainer button {
+  @apply md:text-lg lg:text-xl bg-accent_1 hover:bg-slate-100 focus:bg-slate-100 text-slate-100 hover:text-accent_1 focus:text-accent_1 border-accent_1 hover:border-slate-100 focus:border-slate-100
 }

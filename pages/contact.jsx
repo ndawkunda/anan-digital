@@ -12,6 +12,7 @@ const Contact = () => {
     'site': false,
     'graphic': false,
     'logo': false,
+    'training': false,
     'other': false,
   });
   const [info, setInfo] = useState('');
@@ -176,6 +177,14 @@ const Contact = () => {
                     checked={ projects.logo }
                     onChange={ () => handleCheck('logo') } />
                   <label htmlFor='logo'>Logo</label>
+                </div>
+                <div className={ contactStyles.checkContainer }>
+                  <input
+                    type='checkbox' name='training' id='training'
+                    value='training'
+                    checked={ projects.training }
+                    onChange={ () => handleCheck('training') } />
+                  <label htmlFor='training'>Formation</label>
                 </div>
                 <div className={ contactStyles.checkContainer }>
                   <input

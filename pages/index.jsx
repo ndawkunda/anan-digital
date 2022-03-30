@@ -1,218 +1,595 @@
-import Link from 'next/link';
-import Layout from '../components/Layout';
-import Image from 'next/image';
-import { FaUsers, FaHandsHelping, FaRss, FaHandHoldingUsd, FaShoppingBasket, FaUserCog, FaSearch, FaExpandArrowsAlt, FaBezierCurve, FaPlaneDeparture, FaFileMedicalAlt } from "react-icons/fa";
-import homeStyles from '../styles/Home.module.css';
-import layoutStyles from '../styles/Layout.module.css';
-import illustration1 from '../public/images/illustration-1.svg';
-import illustration2 from '../public/images/illustration-3.svg';
-import epharmed from '../public/images/epharmed.png';
-import senpara from '../public/images/senpara.png';
-import wila from '../public/images/wila.png';
+import Link from "next/link";
+import Script from "next/script";
+import Image from "next/image";
+import {
+  FaBullseye,
+  FaDiceD20,
+  FaCogs,
+  FaCheckCircle,
+  FaDesktop,
+  FaWrench,
+} from "react-icons/fa";
+import Layout from "../components/Layout";
+import homeStyles from "../styles/Home.module.css";
+import layoutStyles from "../styles/Layout.module.css";
+import illustration1Alt from "../public/images/illustration-1-alt.svg";
+import site from "../public/images/site.jpg";
+import design from "../public/images/design.jpg";
+import training from "../public/images/training.jpg";
+import print from "../public/images/print.jpg";
+import epharmed from "../public/images/partners/epharmed.png";
+import jamesShoes from "../public/images/partners/james_shoes.png";
+import matlabuChifai from "../public/images/partners/matlabu_chifai.png";
+import nakoudie from "../public/images/partners/nakoudie.png";
+import nk from "../public/images/partners/nk.png";
+import samaclasse from "../public/images/partners/samaclasse.png";
+import senpara from "../public/images/partners/senpara.png";
+import tatichou from "../public/images/partners/tatichou.png";
+import wila from "../public/images/partners/wila.png";
 
 const Home = () => {
-  return (
-    <Layout title="ANAN Digital - Accueil">
-      <div className={ homeStyles.container }>
-        <section className={ homeStyles.hero }>
-          <div className={ homeStyles.imgContainer }>
-            <Image src={ illustration1 } alt='illustration-1' height="360" width="360" />
-          </div>
-          <div className={ homeStyles.textContainer }>
-            <h1>Confiez la création de votre site internet à une agence web</h1>
-            <p>Lorsque l&apos;on parle d&apos;un site internet, qu&apos;il s&apos;agisse d&apos;un Site Vitrine et d&apos;un Site eCommerce, le beau n&apos;est pas une option, c&apos;est même une base indispensable.</p>
-            <button className={ layoutStyles.btn }>
-              <Link href='/contact'>Je veux un site web !</Link>
-            </button>
-          </div>
-        </section>
-        <section className={ homeStyles.why }>
-          <div className={ layoutStyles.titleContainer }>
-            <h1 className={ layoutStyles.sectionTitle }>Pourquoi avoir un site internet ?</h1>
-          </div>
-          <div className={ homeStyles.cardsContainer }>
-            <div className={ homeStyles.cardContainer }>
-              <div className={ homeStyles.card }>
-                <div className={ homeStyles.icon }><FaUsers /></div>
-                <h2 className={ homeStyles.text }>Vos clients sont en ligne et y passent beaucoup de temps</h2>
-              </div>
-            </div>
-            <div className={ homeStyles.cardContainer }>
-              <div className={ homeStyles.card }>
-                <div className={ homeStyles.icon }><FaHandsHelping /></div>
-                <h2 className={ homeStyles.text }>Un site internet vous permet d&apos;inspirer confiance et de maîtriser votre communication en ligne</h2>
-              </div>
-            </div>
-            <div className={ homeStyles.cardContainer }>
-              <div className={ homeStyles.card }>
-                <div className={ homeStyles.icon }><FaRss /></div>
-                <h2 className={ homeStyles.text }>Ce qui est formidable avec le Web, c&apos;est que c&apos;est accessible en tout temps et de partout</h2>
-              </div>
-            </div>
-            <div className={ homeStyles.cardContainer }>
-              <div className={ homeStyles.card }>
-                <div className={ homeStyles.icon }><FaHandHoldingUsd /></div>
-                <h2 className={ homeStyles.text }>Votre site web est un investissement et non une dépense</h2>
-              </div>
-            </div>
-            <div className={ homeStyles.cardContainer }>
-              <div className={ homeStyles.card }>
-                <div className={ homeStyles.icon }><FaShoppingBasket /></div>
-                <h2 className={ homeStyles.text }>C&apos;est bien connu, de plus en plus les acheteurs magasinent sur le web</h2>
-              </div>
-            </div>
-            <div className={ homeStyles.cardContainer }>
-              <div className={ homeStyles.card }>
-                <div className={ homeStyles.icon }><FaUserCog /></div>
-                <h2 className={ homeStyles.text }>Votre site Internet peut devenir un complément à votre service à la clientèle</h2>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className={ homeStyles.banner }>
-          <div className={ homeStyles.imgContainer }>
-            <Image src={ illustration2 } alt='illustration-2' height="300" width="400" />
-          </div>
-          <div className={ homeStyles.textContainer }>
-            <p className={ homeStyles.text }>
-              Le site internet est aujourd&apos;hui un outil de communication incontournable à l&apos;ère du numérique. Pour valoriser au mieux votre image et votre offre, nous créons des sites internet de qualité. Nous mettons toutes les expertises de notre agence pour produire une solution parfaitement adaptée au service de votre projet et de la croissance de votre activité. Nous formons également nos clients pour qu&apos;ils soient autonomes sur la gestion de contenu (CMS) de leur site internet.
-            </p>
-            <button className={ layoutStyles.btn }>
-              <Link href='/contact'>Je veux un devis !</Link>
-            </button>
-          </div>
-        </section>
-        <section className={ homeStyles.clients }>
-          <div className={ layoutStyles.titleContainer }>
-            <h1 className={ layoutStyles.sectionTitle }>Ils nous ont fait confiance</h1>
-          </div>
-          <div className={ homeStyles.cardsContainer }>
-            <div className={ homeStyles.cardContainer }>
-              <div className={ homeStyles.card }>
-                <div className={ homeStyles.imgContainer }>
-                  <Image src={ wila } alt='site-web-wila' />
-                </div>
-                <div className={ homeStyles.textContainer }>
-                  <h3 className={ homeStyles.title }><a href="#">Wila</a></h3>
-                  <p className={ homeStyles.desc }>Site e-commerce de cosmétiques naturelles</p>
-                </div>
-              </div>
-            </div>
-            <div className={ homeStyles.cardContainer }>
-              <div className={ homeStyles.card }>
-                <div className={ homeStyles.imgContainer }>
-                  <Image src={ epharmed } alt='site-web-epharmed' />
-                </div>
-                <div className={ homeStyles.textContainer }>
-                  <h3 className={ homeStyles.title }><a href="#">e-Pharmed</a></h3>
-                  <p className={ homeStyles.desc }>Site de e-santé</p>
-                </div> 
-              </div>
-            </div>
-            <div className={ homeStyles.cardContainer }>
-              <div className={ homeStyles.card }>
-                <div className={ homeStyles.imgContainer }>
-                  <Image src={ senpara } alt='site-web-senpara' />
-                </div>
-                <div className={ homeStyles.textContainer }>
-                  <h3 className={ homeStyles.title }><a href="#">Senpara</a></h3>
-                  <p className={ homeStyles.desc }>Site e-commerce de parapharmacie</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button className={ layoutStyles.btn }>
-            <Link href='/contact'>Nous contacter</Link>
-          </button>
-        </section>
-        <section className={ homeStyles.how }>
-          <div className={ layoutStyles.titleContainer }>
-            <h1 className={ layoutStyles.sectionTitle }>Ce que nous faisons</h1>
-          </div>
-          <div  className={ homeStyles.rowsContainer }>
-            {/* <!-- left --> */}
-            <div className={ homeStyles.rowLeft }>
-              <div className={ homeStyles.card }>
-                <h3 className={ homeStyles.title }><FaSearch /> Des sites SEO friendly</h3>
-                <p className={ homeStyles.text }>
-                  Les sites internet que nous créons sont SEO Friendly, c&apos;est-à-dire conformes aux standards du W3C et aux recommandations Google. L&apos;équipe web assure une veille technique active afin de maintenir ou faire évoluer les solutions web de l&apos;agence. Cette veille permet de proposer de nouvelles fonctionnalités web ou de remédier rapidement aux changements de comportement des moteurs de recherche.
-                </p>
-              </div>
-              <div className={ homeStyles.join }>
-                <div className={ homeStyles.lineContainer }>
-                  <div className={ homeStyles.line }></div>
-                </div>
-                <div className={ homeStyles.circle }></div>
-              </div>
-            </div>
-            {/* <!-- right --> */}
-            <div className={ homeStyles.rowRight }>
-              <div  className={ homeStyles.join }>
-                <div className={ homeStyles.lineContainer }>
-                  <div className={ homeStyles.line }></div>
-                </div>
-                <div className={ homeStyles.circle }></div>
-              </div>
-              <div className={ homeStyles.card }>
-                <h3 className={ homeStyles.title }><FaExpandArrowsAlt /> Des sites responsives</h3>
-                <p className={ homeStyles.text }>
-                  Le mobile représente aujourd&apos;hui plus de 50% des consultations de sites internet. Le webdesign et le contenu des sites internet que nous créons sont adaptés à la consultation sur tous les support (ordinateur, mobile et tablette). Nous développons nos sites en suivant le concept  Mobile First. Votre site web est développé pour parfaitement se déformer et rester totalement opérationnel sur tous les supports.
-                </p>
-              </div>
-            </div>
-            {/* <!-- left --> */}
-            <div className={ homeStyles.rowLeft }>
-              <div className={ homeStyles.card }>
-                <h3 className={ homeStyles.title }><FaBezierCurve /> Webdesign</h3>
-                <p className={ homeStyles.text }>
-                  En fonction de votre identité de marque et de votre marché, nous vous proposons une expérience utilisateur adaptée à votre cible et à ses attentes.
-                </p>
-              </div>
-              <div className={ homeStyles.join }>
-                <div className={ homeStyles.lineContainer }>
-                  <div className={ homeStyles.line }></div>
-                </div>
-                <div className={ homeStyles.circle }></div>
-              </div>
-            </div>
-            {/* <!-- right --> */}
-            <div className={ homeStyles.rowRight }>
-              <div  className={ homeStyles.join }>
-                <div className={ homeStyles.lineContainer }>
-                  <div className={ homeStyles.line }></div>
-                </div>
-                <div className={ homeStyles.circle }></div>
-              </div>
-              <div className={ homeStyles.card }>
-                <h3 className={ homeStyles.title }><FaPlaneDeparture /> Des sites évolutifs</h3>
-                <p className={ homeStyles.text }>
-                  Les technologies que notre agence utilise pour la création de votre site web nous permettent de disposer d&apos;une solution qui va parfaitement évoluer avec votre activité.
-                </p>
-              </div>
-            </div>
-            {/* <!-- left --> */}
-            <div className={ homeStyles.rowLeft }>
-              <div className={ homeStyles.card }>
-                <h3 className={ homeStyles.title }><FaFileMedicalAlt /> Contenus améliorés</h3>
-                <p className={ homeStyles.text }>
-                  Dotée des meilleurs outils d&apos;optimisation et formée aux bonnes pratiques sur les contenus web, notre équipe optimise les textes et médias de votre site internet pour améliorer l&apos;expérience utilisateur et votre référencement naturel.
-                </p>
-              </div>
-              <div className={ homeStyles.join }>
-                <div className={ homeStyles.lineContainer }>
-                  <div className={ homeStyles.line }></div>
-                </div>
-                <div className={ homeStyles.circle }></div>
-              </div>
-            </div>
-          </div>
-          <button className={ layoutStyles.btn }>
-            <Link href='/a-propos'>En savoir plus</Link>
-          </button>
-        </section>
-      </div>
-    </Layout>
-  )
-}
+  const serviceImgWidth = 800;
+  const serviceImgHeight = 300;
+  const partnerImgDim = 500;
 
-export default Home
+  return (
+    <>
+      <Layout title="ANAN Digital - Accueil">
+        <div className={homeStyles.container}>
+          <section id={homeStyles.hero} className={layoutStyles.hero}>
+            <div className={layoutStyles.overlay}>
+              <div className={layoutStyles.imgContainer}></div>
+              <div className={layoutStyles.textContainer}>
+                <h1>Confiez vos projets informatique à une agence IT</h1>
+                <p>
+                  Nous allons vous accompagner pour la création d&apos;un site
+                  internet et le référencement naturel (SEO). Nous pouvons
+                  également prendre en charge la création de logo,
+                  d&apos;identité visuelle et supports de communication.
+                </p>
+                <button className={layoutStyles.btn}>
+                  <Link href="/contact">J&apos;ai un projet !</Link>
+                </button>
+              </div>
+            </div>
+          </section>
+          <section className={homeStyles.services}>
+            <div className={layoutStyles.titleContainer}>
+              <h1 className={layoutStyles.sectionTitle}>Nos services</h1>
+              <div className={layoutStyles.titleUnderline}></div>
+            </div>
+            <div className={homeStyles.cardsContainer}>
+              <Link href="/site" passHref>
+                <div className={homeStyles.cardContainer}>
+                  <div className={homeStyles.card}>
+                    <div className={homeStyles.imgContainer}>
+                      <Image
+                        src={site}
+                        alt="site illustration"
+                        className={homeStyles.img}
+                        width={serviceImgWidth}
+                        height={serviceImgHeight}
+                        objectFit="cover"
+                        objectPosition="center"
+                      />
+                    </div>
+                    <div className={homeStyles.textContainer}>
+                      <h3 className={homeStyles.title}>Développement Web</h3>
+                      <p className={homeStyles.desc}>
+                        Avoir un site web est devenu aujourd&apos;hui
+                        indispensable, faites nous confiance pour vos projets de
+                        site e-Commerce, vitrine, SaaS, etc.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+              <Link href="#" passHref>
+                <div className={homeStyles.cardContainer}>
+                  <div className={homeStyles.card}>
+                    <div className={homeStyles.imgContainer}>
+                      <Image
+                        src={design}
+                        alt="design illustration"
+                        className={homeStyles.img}
+                        width={serviceImgWidth}
+                        height={serviceImgHeight}
+                        objectFit="cover"
+                        objectPosition="center"
+                      />
+                    </div>
+                    <div className={homeStyles.textContainer}>
+                      <h3 className={homeStyles.title}>Design Graphic</h3>
+                      <p className={homeStyles.desc}>
+                        Le cerveau humain retient naturellement plus facilement
+                        un visuel qu’un texte. Confiez nous la création de votre
+                        identité graphique.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+              <Link href="#" passHref>
+                <div className={homeStyles.cardContainer}>
+                  <div className={homeStyles.card}>
+                    <div className={homeStyles.imgContainer}>
+                      <Image
+                        src={print}
+                        alt="print illustration"
+                        className={homeStyles.img}
+                        width={serviceImgWidth}
+                        height={serviceImgHeight}
+                        objectFit="cover"
+                        objectPosition="center"
+                      />
+                    </div>
+                    <div className={homeStyles.textContainer}>
+                      <h3 className={homeStyles.title}>Impression</h3>
+                      <p className={homeStyles.desc}>
+                        Avec une identité graphique, nous pouvons vous
+                        confectionner des objets de communication pour vos
+                        campagne de marketing.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+              <Link href="#" passHref>
+                <div className={homeStyles.cardContainer}>
+                  <div className={homeStyles.card}>
+                    <div className={homeStyles.imgContainer}>
+                      <Image
+                        src={training}
+                        alt="training illustration"
+                        className={homeStyles.img}
+                        width={serviceImgWidth}
+                        height={serviceImgHeight}
+                        objectFit="cover"
+                        objectPosition="center"
+                      />
+                    </div>
+                    <div className={homeStyles.textContainer}>
+                      <h3 className={homeStyles.title}>Formation</h3>
+                      <p className={homeStyles.desc}>
+                        Devenir autonome avec les outils informatique est
+                        indispensables de nos jours. Nous vous proposons des
+                        formations sur les bases de l&apos;informatique les
+                        outils les plus utilisés (Word, Excel, Powerpoint, etc.)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <button className={layoutStyles.btn}>
+              <Link href="/contact">Je veux un devis !</Link>
+            </button>
+          </section>
+          <section className={homeStyles.banner}>
+            <div className={homeStyles.textContainer}>
+              <h3>
+                Vous avez un projet informatique ? Vous souhaitez faire votre
+                transition digitale ? Faisons-le ensemble !
+              </h3>
+              <button
+                id={homeStyles.bannerBtnDesktop}
+                className={layoutStyles.btn}
+              >
+                <Link href="/contact">Nous contacter</Link>
+              </button>
+            </div>
+            <div className={homeStyles.imgContainer}>
+              <Image
+                src={illustration1Alt}
+                alt="illustration-2"
+                height={600}
+                width={600}
+                objectFit="cover"
+                objectPosition="center"
+              />
+            </div>
+            <button
+              id={homeStyles.bannerBtnMobile}
+              className={layoutStyles.btn}
+            >
+              <Link href="/contact">Nous contacter</Link>
+            </button>
+          </section>
+          <section className={homeStyles.steps}>
+            <div className={layoutStyles.titleContainer}>
+              <h1 className={layoutStyles.sectionTitle}>
+                Notre methode de travail
+              </h1>
+              <div className={layoutStyles.titleUnderline}></div>
+            </div>
+            <div className={homeStyles.stepsContainer}>
+              <div className={homeStyles.stepOddContainer}>
+                <div className={homeStyles.stepOdd}>
+                  <div className={homeStyles.side1}>
+                    <div className={homeStyles.side1Content}>
+                      <div className={homeStyles.stepText}>01.</div>
+                      <div className={homeStyles.ideaText}>Objectifs</div>
+                    </div>
+                    <div className={homeStyles.vBarContainer}>
+                      <div className={homeStyles.vBar}></div>
+                    </div>
+                  </div>
+                  <div className={homeStyles.side2}>
+                    <div className={homeStyles.side2Content}>
+                      <div>
+                        <div className={homeStyles.side2Header}>
+                          <span>01.</span> - Objectifs
+                        </div>
+                        <div className={homeStyles.side2Title}>
+                          Stratégie et définition des objectifs
+                        </div>
+                        <div className={homeStyles.side2Text}>
+                          Lors de cette phase préalable au démarrage du projet,
+                          nous définissons ensemble : les objectifs et la portée
+                          du projet,es livrables attendus, les délais souhaités,
+                          le budget alloué, le degré de souplesse qui pourra
+                          être accordé, etc.
+                        </div>
+                      </div>
+                      <div className={homeStyles.side2IconContainer}>
+                        <FaBullseye />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className={homeStyles.strokeOdd}>
+                  <div className={homeStyles.line1Container}>
+                    <div className={homeStyles.line1}></div>
+                  </div>
+                  <div className={homeStyles.line2Container}>
+                    <div className={homeStyles.line2}></div>
+                  </div>
+                  <div className={homeStyles.line3}></div>
+                </div>
+              </div>
+              <div className={homeStyles.stepEvenContainer}>
+                <div className={homeStyles.stepEven}>
+                  <div className={homeStyles.side1}>
+                    <div className={homeStyles.side1Content}>
+                      <div className={homeStyles.stepText}>02.</div>
+                      <div className={homeStyles.ideaText}>Conception</div>
+                    </div>
+                    <div className={homeStyles.vBarContainer}>
+                      <div className={homeStyles.vBar}></div>
+                    </div>
+                  </div>
+                  <div className={homeStyles.side2}>
+                    <div className={homeStyles.side2Content}>
+                      <div>
+                        <div className={homeStyles.side2Header}>
+                          <span>02.</span> - Conception
+                        </div>
+                        <div className={homeStyles.side2Title}>
+                          Conception détaillée
+                        </div>
+                        <div className={homeStyles.side2Text}>
+                          Après l’élaboration des spécifications de la structure
+                          générale du projet, on rentre dans le vif du sujet
+                          avec sa conception détaillée en plusieurs sous-étapes
+                          : découpage et chiffrage pour évaluer le coût global
+                          du projet, planification et constitution de l’équipe
+                          de projet.
+                        </div>
+                      </div>
+                      <div className={homeStyles.side2IconContainer}>
+                        <FaDiceD20 />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className={homeStyles.strokeEven}>
+                  <div className={homeStyles.line1Container}>
+                    <div className={homeStyles.line1}></div>
+                  </div>
+                  <div className={homeStyles.line2Container}>
+                    <div className={homeStyles.line2}></div>
+                  </div>
+                  <div className={homeStyles.line3}></div>
+                </div>
+              </div>
+              <div className={homeStyles.stepOddContainer}>
+                <div className={homeStyles.stepOdd}>
+                  <div className={homeStyles.side1}>
+                    <div className={homeStyles.side1Content}>
+                      <div className={homeStyles.stepText}>03.</div>
+                      <div className={homeStyles.ideaText}>Développement</div>
+                    </div>
+                    <div className={homeStyles.vBarContainer}>
+                      <div className={homeStyles.vBar}></div>
+                    </div>
+                  </div>
+                  <div className={homeStyles.side2}>
+                    <div className={homeStyles.side2Content}>
+                      <div>
+                        <div className={homeStyles.side2Header}>
+                          <span>03.</span> - Développement
+                        </div>
+                        <div className={homeStyles.side2Title}>
+                          Développement du projet
+                        </div>
+                        <div className={homeStyles.side2Text}>
+                          La réalisation est le cœur même du projet, qui
+                          intervient après sa conception rigoureuse, en
+                          conformité avec la stratégie et les objectifs.
+                        </div>
+                      </div>
+                      <div className={homeStyles.side2IconContainer}>
+                        <FaCogs />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className={homeStyles.strokeOdd}>
+                  <div className={homeStyles.line1Container}>
+                    <div className={homeStyles.line1}></div>
+                  </div>
+                  <div className={homeStyles.line2Container}>
+                    <div className={homeStyles.line2}></div>
+                  </div>
+                  <div className={homeStyles.line3}></div>
+                </div>
+              </div>
+              <div className={homeStyles.stepEvenContainer}>
+                <div className={homeStyles.stepEven}>
+                  <div className={homeStyles.side1}>
+                    <div className={homeStyles.side1Content}>
+                      <div className={homeStyles.stepText}>04.</div>
+                      <div className={homeStyles.ideaText}>Recette</div>
+                    </div>
+                    <div className={homeStyles.vBarContainer}>
+                      <div className={homeStyles.vBar}></div>
+                    </div>
+                  </div>
+                  <div className={homeStyles.side2}>
+                    <div className={homeStyles.side2Content}>
+                      <div>
+                        <div className={homeStyles.side2Header}>
+                          <span>04.</span> - Recette
+                        </div>
+                        <div className={homeStyles.side2Title}>
+                          Validation par l&apos;utilisateur
+                        </div>
+                        <div className={homeStyles.side2Text}>
+                          Les tests menés vont permettre de développer une
+                          solution correspondant aux besoins exprimés en amont
+                          du projet. La recette, ou le recettage, est le
+                          processus de validation par l&apos;utilisateur de la
+                          conformité des livrables par rapport aux objectifs
+                          initials.
+                        </div>
+                      </div>
+                      <div className={homeStyles.side2IconContainer}>
+                        <FaCheckCircle />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className={homeStyles.strokeEven}>
+                  <div className={homeStyles.line1Container}>
+                    <div className={homeStyles.line1}></div>
+                  </div>
+                  <div className={homeStyles.line2Container}>
+                    <div className={homeStyles.line2}></div>
+                  </div>
+                  <div className={homeStyles.line3}></div>
+                </div>
+              </div>
+              <div className={homeStyles.stepOddContainer}>
+                <div className={homeStyles.stepOdd}>
+                  <div className={homeStyles.side1}>
+                    <div className={homeStyles.side1Content}>
+                      <div className={homeStyles.stepText}>05.</div>
+                      <div className={homeStyles.ideaText}>Déploiement</div>
+                    </div>
+                    <div className={homeStyles.vBarContainer}>
+                      <div className={homeStyles.vBar}></div>
+                    </div>
+                  </div>
+                  <div className={homeStyles.side2}>
+                    <div className={homeStyles.side2Content}>
+                      <div>
+                        <div className={homeStyles.side2Header}>
+                          <span>05.</span> - Déploiement
+                        </div>
+                        <div className={homeStyles.side2Title}>
+                          Mise en production
+                        </div>
+                        <div className={homeStyles.side2Text}>
+                          Une fois toutes les objectifs atteints, la solution
+                          peut être déployée : il s&apos;agit de la livraison du
+                          produit final et de sa mise en service. Il sera prévu
+                          une formation des utilisateurs aux nouvelles
+                          fonctionnalités offertes par la solution.
+                        </div>
+                      </div>
+                      <div className={homeStyles.side2IconContainer}>
+                        <FaDesktop />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className={homeStyles.strokeOdd}>
+                  <div className={homeStyles.line1Container}>
+                    <div className={homeStyles.line1}></div>
+                  </div>
+                  <div className={homeStyles.line2Container}>
+                    <div className={homeStyles.line2}></div>
+                  </div>
+                  <div className={homeStyles.line3}></div>
+                </div>
+              </div>
+              <div className={homeStyles.stepEvenContainer}>
+                <div className={homeStyles.stepEven}>
+                  <div className={homeStyles.side1}>
+                    <div className={homeStyles.side1Content}>
+                      <div className={homeStyles.stepText}>06.</div>
+                      <div className={homeStyles.ideaText}>Maintenance</div>
+                    </div>
+                    <div className={homeStyles.vBarContainer}></div>
+                  </div>
+                  <div className={homeStyles.side2}>
+                    <div className={homeStyles.side2Content}>
+                      <div>
+                        <div className={homeStyles.side2Header}>
+                          <span>04.</span> - Maintenance
+                        </div>
+                        <div className={homeStyles.side2Title}>
+                          Support client
+                        </div>
+                        <div className={homeStyles.side2Text}>
+                          Après la mise en service, le produit informatique
+                          nécessite des ajustements, qui englobent à la fois des
+                          actions correctives et évolutives : correction de
+                          dysfonctionnements, améliorations à apporter, etc.
+                        </div>
+                      </div>
+                      <div className={homeStyles.side2IconContainer}>
+                        <FaWrench />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button className={layoutStyles.btn}>
+              <Link href="/contact">J&apos;ai une idée !</Link>
+            </button>
+          </section>
+          <section className={homeStyles.partners}>
+            <div
+              id={homeStyles.partnersTitle}
+              className={layoutStyles.titleContainer}
+            >
+              <h1 className={layoutStyles.sectionTitle}>
+                Ils nous ont fait confiance
+              </h1>
+              <div className={layoutStyles.titleUnderline}></div>
+            </div>
+            <div className={homeStyles.partnersContainer}>
+              <div className={homeStyles.partner}>
+                <div>
+                  <Image
+                    src={epharmed}
+                    alt="Logo e-Pharmed"
+                    height={partnerImgDim}
+                    width={partnerImgDim}
+                    objectFit="cover"
+                    objectPosition="center"
+                  />
+                </div>
+              </div>
+              <div className={homeStyles.partner}>
+                <div>
+                  <Image
+                    src={wila}
+                    alt="Logo Wila"
+                    height={partnerImgDim}
+                    width={partnerImgDim}
+                    objectFit="cover"
+                    objectPosition="center"
+                  />
+                </div>
+              </div>
+              <div className={homeStyles.partner}>
+                <div>
+                  <Image
+                    src={jamesShoes}
+                    alt="Logo James Shoes"
+                    height={partnerImgDim}
+                    width={partnerImgDim}
+                    objectFit="cover"
+                    objectPosition="center"
+                  />
+                </div>
+              </div>
+              <div className={homeStyles.partner}>
+                <div>
+                  <Image
+                    src={tatichou}
+                    alt="Logo Tatichou"
+                    height={partnerImgDim}
+                    width={partnerImgDim}
+                    objectFit="cover"
+                    objectPosition="center"
+                  />
+                </div>
+              </div>
+              <div className={homeStyles.partner}>
+                <div>
+                  <Image
+                    src={matlabuChifai}
+                    alt="Logo Matlabu Chifai"
+                    height={partnerImgDim}
+                    width={partnerImgDim}
+                    objectFit="cover"
+                    objectPosition="center"
+                  />
+                </div>
+              </div>
+              <div className={homeStyles.partner}>
+                <div>
+                  <Image
+                    src={senpara}
+                    alt="Logo Senpara"
+                    height={partnerImgDim}
+                    width={partnerImgDim}
+                    objectFit="cover"
+                    objectPosition="center"
+                  />
+                </div>
+              </div>
+              <div className={homeStyles.partner}>
+                <div>
+                  <Image
+                    src={samaclasse}
+                    alt="Logo Samaclasse"
+                    height={partnerImgDim}
+                    width={partnerImgDim}
+                    objectFit="cover"
+                    objectPosition="center"
+                  />
+                </div>
+              </div>
+              <div className={homeStyles.partner}>
+                <div>
+                  <Image
+                    src={nakoudie}
+                    alt="Logo Nakoudie"
+                    height={partnerImgDim}
+                    width={partnerImgDim}
+                    objectFit="cover"
+                    objectPosition="center"
+                  />
+                </div>
+              </div>
+              <div className={homeStyles.partner}>
+                <div>
+                  <Image
+                    src={nk}
+                    alt="Logo NK"
+                    height={partnerImgDim}
+                    width={partnerImgDim}
+                    objectFit="cover"
+                    objectPosition="center"
+                  />
+                </div>
+              </div>
+            </div>
+            <button className={layoutStyles.btn}>
+              <Link href="/contact">Je lance mon projet !</Link>
+            </button>
+          </section>
+        </div>
+      </Layout>
+
+      <Script src="../public/assets/js/home.js" strategy="lazyOnload" />
+    </>
+  );
+};
+
+export default Home;

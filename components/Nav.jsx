@@ -11,6 +11,10 @@ const Nav = () => {
       url: "/",
     },
     {
+      label: 'Site web',
+      url: "/site",
+    },
+    {
       label: 'À propos',
       url: "/a-propos",
     },
@@ -28,7 +32,7 @@ const Nav = () => {
 
   return (
     <div className={ navStyles.navContainer }>
-      <nav className={ navStyles.nav }>
+      <nav id='navbar' className={ navStyles.nav }>
         <div className={ navStyles.logoContainer }>
           <Link href='/'>
             <div className={ navStyles.logo }><span>ANAN</span> Digital</div> 
