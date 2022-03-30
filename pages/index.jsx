@@ -40,7 +40,7 @@ const Home = () => {
             <div className={layoutStyles.overlay}>
               <div className={layoutStyles.imgContainer}></div>
               <div className={layoutStyles.textContainer}>
-                <h1>Confiez vos projets informatique à une agence IT</h1>
+                <h1>Confiez vos projets informatique à ANAN Digital</h1>
                 <p>
                   Nous allons vous accompagner pour la création d&apos;un site
                   internet et le référencement naturel (SEO). Nous pouvons
@@ -48,7 +48,7 @@ const Home = () => {
                   d&apos;identité visuelle et supports de communication.
                 </p>
                 <button className={layoutStyles.btn}>
-                  <Link href="/contact">J&apos;ai un projet !</Link>
+                  <Link href="/contact">Contactez nous pour vos projet !</Link>
                 </button>
               </div>
             </div>
