@@ -84,7 +84,7 @@ const Home = () => {
                   </div>
                 </div>
               </Link>
-              <Link href="#" passHref>
+              <Link href="/design" passHref>
                 <div className={homeStyles.cardContainer}>
                   <div className={homeStyles.card}>
                     <div className={homeStyles.imgContainer}>
@@ -109,7 +109,7 @@ const Home = () => {
                   </div>
                 </div>
               </Link>
-              <Link href="#" passHref>
+              <Link href="/impression" passHref>
                 <div className={homeStyles.cardContainer}>
                   <div className={homeStyles.card}>
                     <div className={homeStyles.imgContainer}>
@@ -134,7 +134,7 @@ const Home = () => {
                   </div>
                 </div>
               </Link>
-              <Link href="#" passHref>
+              <Link href="formations" passHref>
                 <div className={homeStyles.cardContainer}>
                   <div className={homeStyles.card}>
                     <div className={homeStyles.imgContainer}>
