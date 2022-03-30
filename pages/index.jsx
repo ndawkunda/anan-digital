@@ -102,8 +102,8 @@ const Home = () => {
                       <h3 className={homeStyles.title}>Design Graphic</h3>
                       <p className={homeStyles.desc}>
                         Le cerveau humain retient naturellement plus facilement
-                        un visuel qu&apos;un texte. Confiez nous la création de votre
-                        identité graphique.
+                        un visuel qu&apos;un texte. Confiez nous la création de
+                        votre identité graphique.
                       </p>
                     </div>
                   </div>
@@ -198,7 +198,7 @@ const Home = () => {
           <section className={homeStyles.steps}>
             <div className={layoutStyles.titleContainer}>
               <h1 className={layoutStyles.sectionTitle}>
-                Notre methode de travail
+                Notre méthode de travail
               </h1>
               <div className={layoutStyles.titleUnderline}></div>
             </div>
